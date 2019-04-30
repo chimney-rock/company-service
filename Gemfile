@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
 
+gem 'pg'
 gem 'rails', '~> 6.0.0.rc1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -12,8 +13,8 @@ gem 'goldiloader', '~> 3.1'
 # API
 gem 'rack-cors'
 gem 'rack-attack'
-gem 'grpc', '~> 1.20'
 gem 'graphql', '~> 1.9'
+gem 'google-protobuf', '~> 3.7', '>= 3.7.1'
 
 group :development do
   gem 'debase', '~> 0.2.2'
@@ -32,7 +33,6 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'
 end
-
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
