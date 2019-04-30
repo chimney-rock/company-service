@@ -7,6 +7,7 @@ gem 'pg'
 gem 'rails', '~> 6.0.0.rc1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'tzinfo-data'
 gem 'oj', '~> 3.7'
 gem 'goldiloader', '~> 3.1'
 gem 'bunny', '~> 2.14', '>= 2.14.2'
@@ -37,4 +38,6 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-gem 'tzinfo-data'
+group :test do
+  gem 'shoulda-matchers', '~> 4.0', '>= 4.0.1'
+end
