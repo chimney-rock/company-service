@@ -1,3 +1,4 @@
 class ApiSchema < GraphQL::Schema
-  query QueryType
+  query(Types::QueryType)
+  mutation(Types::MutationType)
 end
