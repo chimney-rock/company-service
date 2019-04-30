@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "company-service": {
+      "schemaPath": "public/schema.json",
+      "extensions": {
+        "endpoints": {
+          "dev": "http://localhost:3000/graphql"
+        }
+      }
+    }
+  }
+}
